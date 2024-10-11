@@ -131,4 +131,8 @@ This process fills the DP table recursively by considering each item and whether
 
 (这个过程通过递推的方式逐步填充 dp 表，考虑每个项目时，看它是否能够组成目标和 j。最终在表格的最后一行判断 dp[n][target] 是否为 true 来决定能否找到和为目标的组合。)
 
+For our use case find the combination to the closest sum, we still use dp[i][j] to indicate whether a sum of j can be achieved through some combination of the first i numbers. However, since we don't need to exactly match the target value, as we traverse through all possible sums, we need to search for the closest sum. Finally, we will backtrack from dp[n][target], looking for the closest achievable sum.
+
+(对于此处的用例我们是寻找最近接目标值和的组合，我们仍然使用dp[i][j]表示是否可以通过前i个数字的某种组合达到一个和为j的值。但是，由于我们不需要精确匹配目标值，我们在遍历所有可能的和时，需要寻找最接近的和。最终我们会从dp[n][target]往回查找，直到找到一个可以被实现的最接近的和。)
+
 ---------
