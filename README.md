@@ -1,4 +1,4 @@
-# ClosestSumFinder
+# closest-sum-finder
 
 This algorithm is based on the principle of dynamic programming, specifically the knapsack problem.<br>
 <br>
